@@ -1,0 +1,45 @@
+# ── Version control ──────────────────────────────────────────
+.git
+.gitignore
+
+# ── IDE / editor ──────────────────────────────────────────────
+.idea
+.vscode
+*.swp
+*.swo
+
+# ── Python build artifacts ────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Testing ───────────────────────────────────────────────────
+.pytest_cache
+tests/
+.coverage
+htmlcov/
+
+# ── CI / CD config (not needed inside the image) ─────────────
+.circleci/
+.travis.yml
+
+# ── Documentation & infrastructure (not needed at runtime) ───
+README.rst
+Vagrantfile
+DEPLOYMENT_NOTES.md
+LICENSE
+image.png
+
+# ── Local database files ──────────────────────────────────────
+*.db
+*.sqlite3
+
+# ── Environment / secrets (must NEVER be baked into an image) ─
+.env
+.env.*
+*.env
